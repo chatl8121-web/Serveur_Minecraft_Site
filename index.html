@@ -6,7 +6,6 @@
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/528/528095.png ">
         <title>SERVEUR-SITE.</title>
         <script>
-        // Animation pour le titre + apparition animée des boutons
         document.addEventListener("DOMContentLoaded", function() {
             const titre = document.getElementById("titre");
             const boutons = document.getElementById("boutons");
@@ -19,9 +18,9 @@
                     i++;
                     setTimeout(afficherLettre, 80);
                 } else {
-                    // Affiche les boutons après l'animation du titre
+                    
                     boutons.style.display = "block";
-                    // Animation d'apparition pour chaque bouton
+                    
                     const btns = boutons.querySelectorAll("button");
                     btns.forEach((btn, idx) => {
                         setTimeout(() => {
@@ -53,7 +52,7 @@
     opacity: 0;
     transform: translateY(30px);
     font-size: 1.2em;
-    margin: 15px 15px; /* <-- Ajoute une marge verticale */
+    margin: 15px 15px; 
     padding: 10px 25px;
     border-radius: 8px;
     border: none;
